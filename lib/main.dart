@@ -43,8 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                // color: Colors.blueGrey,
+              SizedBox(
                 height: 550,
                 width: 290,
                 child: Center(
@@ -56,10 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Transform(
                           alignment: Alignment.centerRight,
                           transform: Matrix4.rotationZ(-0.18),
-                          child: Container(
+                          child: SizedBox(
                             width: 190,
                             height: 420,
-                            // color: Colors.amber,
                             child: Stack(
                               children: [
                                 Center(
@@ -86,7 +84,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                       height: 70,
                                       decoration: const BoxDecoration(
                                         color: Color(0xff007fc3),
-                                        // color: Colors.amber,
                                         borderRadius: BorderRadius.all(
                                           Radius.circular(100),
                                         ),
@@ -111,7 +108,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                       height: 70,
                                       decoration: const BoxDecoration(
                                         color: Color(0xff007fc3),
-                                        // color: Colors.amber,
                                         borderRadius: BorderRadius.all(
                                           Radius.circular(100),
                                         ),
@@ -161,7 +157,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                       height: 70,
                                       decoration: const BoxDecoration(
                                         color: Color(0xff007fc3),
-                                        // color: Colors.amber,
                                         borderRadius: BorderRadius.all(
                                           Radius.circular(100),
                                         ),
@@ -186,7 +181,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                       height: 50,
                                       decoration: const BoxDecoration(
                                         color: Color(0xff007fc3),
-                                        // color: Colors.amber,
                                         borderRadius: BorderRadius.all(
                                           Radius.circular(100),
                                         ),
@@ -195,10 +189,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                             width: 1.4,
                                             color: Colors.black,
                                           ),
-                                          // right: BorderSide(
-                                          //   width: 1.4,
-                                          //   color: Colors.black,
-                                          // ),
                                         ),
                                       ),
                                     ),
@@ -484,6 +474,19 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                   ),
                                 ),
+                                Center(
+                                  child: Container(
+                                    height: 400,
+                                    width: 150,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xff007fc3),
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(70),
+                                        topRight: Radius.circular(70),
+                                      ),
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -531,7 +534,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                     decoration: const BoxDecoration(
                                       color: Color(0xfffdd116),
                                       borderRadius: BorderRadius.only(
-                                        // topLeft: Radius.circular(100),
                                         topRight: Radius.circular(10),
                                         bottomRight: Radius.elliptical(70, 30),
                                         bottomLeft: Radius.elliptical(70, 30),
@@ -573,6 +575,144 @@ class _MyHomePageState extends State<MyHomePage> {
                                 ),
                               ),
 
+                              // lashes
+                              Positioned(
+                                top: 12,
+                                left: 85,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationZ(0.2),
+                                  child: Container(
+                                    width: 2.3,
+                                    height: 20,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(100),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                top: 13,
+                                left: 70,
+                                child: Container(
+                                  width: 2.3,
+                                  height: 10,
+                                  decoration: const BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(100),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                top: 18,
+                                left: 55,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationZ(-0.55),
+                                  child: Container(
+                                    width: 2.3,
+                                    height: 10,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(100),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                top: 22,
+                                left: 40,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationZ(-1),
+                                  child: Container(
+                                    width: 2.3,
+                                    height: 22,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(100),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                top: 15,
+                                left: 105,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationZ(-0.6),
+                                  child: Container(
+                                    width: 2.3,
+                                    height: 20,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(100),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                top: 10,
+                                left: 122,
+                                child: Container(
+                                  width: 2.3,
+                                  height: 20,
+                                  decoration: const BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(100),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                top: 10,
+                                left: 135,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationZ(0.3),
+                                  child: Container(
+                                    width: 2.3,
+                                    height: 20,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(100),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                top: 18,
+                                left: 148,
+                                child: Transform(
+                                  alignment: Alignment.center,
+                                  transform: Matrix4.rotationZ(0.7),
+                                  child: Container(
+                                    width: 2.3,
+                                    height: 18,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(100),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+
                               // eyes
                               Positioned(
                                 top: 20,
@@ -595,7 +735,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                                   Radius.circular(100),
                                                 ),
                                                 border: Border.all(
-                                                  width: 1.4,
+                                                  width: 1.6,
                                                   color: Colors.black,
                                                 ),
                                               ),
@@ -634,7 +774,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                                 Radius.circular(100),
                                               ),
                                               border: Border.all(
-                                                width: 1.4,
+                                                width: 1.6,
                                                 color: Colors.black,
                                               ),
                                             ),
@@ -715,15 +855,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 46,
                             decoration: const BoxDecoration(
                               color: Color(0xff007fc3),
-                              // color: Colors.brown,
                               borderRadius: BorderRadius.all(
                                 Radius.circular(100),
                               ),
                               border: Border(
-                                // left: BorderSide(
-                                //   width: 1.4,
-                                //   color: Colors.black,
-                                // ),
                                 bottom: BorderSide(
                                   width: 1.4,
                                   color: Colors.black,
@@ -745,15 +880,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 46,
                             decoration: const BoxDecoration(
                               color: Color(0xff007fc3),
-                              // color: Colors.brown,
                               borderRadius: BorderRadius.all(
                                 Radius.circular(100),
                               ),
                               border: Border(
-                                // left: BorderSide(
-                                //   width: 1.4,
-                                //   color: Colors.black,
-                                // ),
                                 bottom: BorderSide(
                                   width: 1.4,
                                   color: Colors.black,
@@ -780,10 +910,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                 Radius.circular(100),
                               ),
                               border: Border(
-                                // left: BorderSide(
-                                //   width: 1.4,
-                                //   color: Colors.black,
-                                // ),
                                 bottom: BorderSide(
                                   width: 1.4,
                                   color: Colors.black,
@@ -805,15 +931,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 46,
                             decoration: const BoxDecoration(
                               color: Color(0xff007fc3),
-                              // color: Colors.brown,
                               borderRadius: BorderRadius.all(
                                 Radius.circular(100),
                               ),
                               border: Border(
-                                // left: BorderSide(
-                                //   width: 1.4,
-                                //   color: Colors.black,
-                                // ),
                                 bottom: BorderSide(
                                   width: 1.4,
                                   color: Colors.black,
@@ -835,7 +956,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 43,
                             decoration: const BoxDecoration(
                               color: Color(0xff007fc3),
-                              // color: Colors.brown,
                               borderRadius: BorderRadius.all(
                                 Radius.circular(100),
                               ),
@@ -865,15 +985,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 43,
                             decoration: const BoxDecoration(
                               color: Color(0xff007fc3),
-                              // color: Colors.brown,
                               borderRadius: BorderRadius.all(
                                 Radius.circular(100),
                               ),
                               border: Border(
-                                // left: BorderSide(
-                                //   width: 1.4,
-                                //   color: Colors.black,
-                                // ),
                                 right: BorderSide(
                                   width: 1.4,
                                   color: Colors.black,
@@ -895,15 +1010,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 50,
                             decoration: const BoxDecoration(
                               color: Color(0xff007fc3),
-                              // color: Colors.brown,
                               borderRadius: BorderRadius.all(
                                 Radius.circular(100),
                               ),
                               border: Border(
-                                // left: BorderSide(
-                                //   width: 1.4,
-                                //   color: Colors.black,
-                                // ),
                                 right: BorderSide(
                                   width: 1.4,
                                   color: Colors.black,
@@ -955,7 +1065,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 36,
                             decoration: const BoxDecoration(
                               color: Color(0xff007fc3),
-                              // color: Colors.brown,
                               borderRadius: BorderRadius.all(
                                 Radius.circular(100),
                               ),
@@ -974,6 +1083,29 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
 
+                      Positioned(
+                        top: 257,
+                        left: 70,
+                        child: Transform(
+                          alignment: Alignment.centerRight,
+                          transform: Matrix4.rotationZ(-0.3),
+                          child: Container(
+                            width: 130,
+                            height: 46,
+                            decoration: BoxDecoration(
+                              color: Color(0xff007fc3),
+                              // color: Colors.brown,
+                              borderRadius: const BorderRadius.all(
+                                Radius.circular(100),
+                              ),
+                              // border: Border.all(
+                              //   width: 0,
+                              // ),
+                            ),
+                          ),
+                        ),
+                      ),
+
                       // ear
                       Positioned(
                         top: 370,
@@ -982,7 +1114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           width: 28,
                           height: 28,
                           decoration: const BoxDecoration(
-                            color: Color(0xfffdd116),
+                            color: Color(0xffe2ab3a),
                             borderRadius: BorderRadius.all(
                               Radius.circular(100),
                             ),
